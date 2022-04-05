@@ -35,7 +35,7 @@ public class SelenideSoftAssertions {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
         open("/selenide/selenide");
-        $("h1").shouldHave(text("selenide / selenide"));
+        $("h1").shouldHave(text("selenide"));
         $("#wiki-tab").click();
         $("#wiki-pages-box").$(".js-wiki-more-pages-link").click();
         $("#wiki-pages-box").shouldHave(text("SoftAssertions")).$(byText("SoftAssertions")).click();
